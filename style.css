@@ -1,0 +1,134 @@
+body
+{
+    padding:10px;
+}
+
+.icon
+{
+width:40px;
+height:45px;
+background-image:url("pictures/icons.png");
+display:block;
+border:0px;
+}
+
+button
+{
+    border:2px solid grey;
+    border-radius: 10px;
+}
+.iconBack
+{
+   background-position: -360px -382px;
+}
+.iconPlus
+{
+    background-position: -417px -10px;   
+}
+.iconRemove
+{
+    background-position: -131px -10px;   
+}
+.iconSolveAuto
+{
+    background-position: -13px -320px;   
+}
+
+.iconSolveManualUPR
+{
+    background-position: -360px -70px;  
+}
+.iconSolveManual
+{
+    background-position: -18px -10px;  
+}
+.iconPrint
+{
+    background-position: -360px -257px ;   
+}
+.iconLightning
+{
+    background-position: -302px -507px ;   
+}
+.iconHelp
+{
+    background-position: 110px -8px ;   
+}
+.infoAboutFactory
+{
+    display:flex;
+    flex-wrap: wrap;
+}
+.infoAboutFactory p
+{
+    margin-right:3%;
+    padding-right: 1%;
+}
+.infoAboutFactory p:last-of-type
+{
+    margin-right: 0%;
+}
+.infoAboutFactory p span
+{
+font-weight: bold;
+}
+
+.tableMaxPollutionV1
+{
+    border-collapse: collapse;
+}
+
+.tableMaxPollutionV1 th
+{
+    border: 2px solid lightgray;
+    padding:5px 10px;
+    max-width: 95%;
+}
+.tableMaxPollutionV1 td
+{
+    padding:5px 10px;
+    background-color:rgb(247, 247, 247); 
+    border:1px solid rgb(220, 220, 220)
+}
+.icontableAuto
+{
+    background-position: 50px -70px ;   
+}
+.iconBackDB
+{
+    background-position: -15px 180px ;   
+}
+.normalMeteo
+{
+    border: 2px solid black;
+    border-bottom: 0px;
+    background-color: darkgray;
+}
+.marginZero
+{
+    margin-bottom: 0px;
+}
+.marginZero p
+{
+    margin-bottom: 0%;
+}
+.menu{
+border: 2px solid black;
+margin-top: 0;
+width: 70%;
+padding: 1%;
+}
+.menu input
+{
+    margin-right:1%;
+}
+.menu fieldset
+{
+    margin-top:1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu label, .menu input
+{
+    margin-top:1%;
+} 
