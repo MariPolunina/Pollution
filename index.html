@@ -327,7 +327,7 @@
                     <p>Выброс при НМУ 3</p>
                 </div>
                 <div class="menu">
-                    <form>
+                    <form method="POST">
                         <label for="pol">Выброс (г/с)</label>
                         <input type="text" value="0.98673" id="pol">
                         <label for="con">Концентрация (мг/м<sup>3</sup>)</label>
@@ -446,6 +446,351 @@
                         <td>0.1078556</td>
                         <td>0.0149</td>
                     </tr>
+                </table>
+            </article>
+
+            <article class="maxPollutionVersion1">
+                <h2>Периодичность контроля на контрольных точках</h2>
+                <div class="icons">
+                    <button>
+                        <span class="icon iconBack"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconPlus"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconRemove"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconSolveManualUPR"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconSolveManual"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconPrint"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconLightning"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconHelp"></span>
+                    </button>
+                </div>
+                <div class="infoAboutFactory">
+                    <p>Вещество:<span>123 диЖелезо(Железа оксид) (в пересчете на железо)</span></p>
+                </div>
+                <table class="tableMaxPollutionV1">
+                    <tr>
+                        <th>Точка</th>
+                        <th>X</th>
+                        <th>Y</th>
+                        <th>Код вещества</th>
+                        <th>Кем осуществляется контроль</th>
+                        <th>Направление ветра</th>
+                        <th>Опасн. скор. (м/с)</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>123</td>
+                        <td></td>
+                        <td>279</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1000</td>
+                        <td>2000</td>
+                        <td>123</td>
+                        <td></td>
+                        <td>255</td>
+                        <td>11</td>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="maxPollutionVersion1">
+                <h2>Категория предприятия</h2>
+                <div class="icons">
+                    <button>
+                        <span class="icon iconBack"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconSolveManualUPR"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconPrint"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconHelp"></span>
+                    </button>
+                </div>
+                <div class="infoAboutFactory">
+                    <p>G<sub>пр</sub>{MAX(G<sub>i</sub>)}= <span>0,7591</span></p>
+                    <p>K{Сумма(K<sub>i</sub>)}= <span>5,14</span></p>
+                    <p>Ф<sub>пр</sub>{MAX(Ф<sub>i</sub>,Ф<sub>гр</sub>)}= <span>9,4</span></p>
+                    <form method="POST" class="categoryFactory">
+                        <label>Категория предприятия</label>
+                        <select>
+                            <option selected>по "Методическому пособию" 2012 г.</option>
+                        </select>
+                    </form>
+                </div>
+                <table class="tableMaxPollutionV1">
+                    <tr>
+                        <th colspan="2">Вещество</th>
+                        <th colspan="2">Высота источника</th>
+                        <th rowspan="2">Выброс(г/с)</th>
+                        <th rowspan="2">Выброс(т/г)</th>
+                        <th rowspan="2">Параметр Ф<sub>i</sub></th>
+                        <th rowspan="2">Параметр К<sub>i</sub></th>
+                        <th rowspan="2">Параметр G<sub>i</sub></th>
+                    </tr>
+                    <tr>
+                        <th>код</th>
+                        <th>наименование</th> 
+                        <th>ср.</th>
+                        <th>макс.</th>
+                    </tr>
+                    <tr>
+                        <td>301</td>
+                        <td>Азота диоксид(Азот (IV) оксид)</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0,46989</td>
+                        <td>0,15333</td>
+                        <td>9,4</td>
+                        <td>3,83</td>
+                        <td>0,7591</td>
+                    </tr>
+                    <tr>
+                        <td>304</td>
+                        <td>Азот(III) оксид(Азота оксид)</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0,007394</td>
+                        <td>0,02492</td>
+                        <td>9,4</td>
+                        <td>3,83</td>
+                        <td>0,7591</td>
+                    </tr>
+                    <tr>
+                        <td>328</td>
+                        <td>Углерод(Сажа)</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0,007162</td>
+                        <td>0,02097</td>
+                        <td>1,64</td>
+                        <td>0,42</td>
+                        <td>0,0209</td>
+                    </tr>
+                    <tr>
+                        <td>330</td>
+                        <td>Сера диоксид(Антигидрид сернистый)</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0,005329</td>
+                        <td>0,01662</td>
+                        <td>0,43</td>
+                        <td>0,33</td>
+                        <td>0,0046</td>
+                    </tr>
+                    <tr>
+                        <td>330</td>
+                        <td>Сера диоксид(Антигидрид сернистый)</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0,005329</td>
+                        <td>0,01662</td>
+                        <td>0,43</td>
+                        <td>0,33</td>
+                        <td>0,0046</td>
+                    </tr>
+                    <tr>
+                        <td>337</td>
+                        <td>Углерод оксид</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0,096231</td>
+                        <td>0,00000</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="red">
+                        <td>827</td>
+                        <td>Нет в справчнике!</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0,000е-07</td>
+                        <td>0,00000</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="red">
+                        <td>2704</td>
+                        <td>Бензин(нефияной, малосернистый)</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0,014060</td>
+                        <td>0,00254</td>
+                        <td>0,11</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="red">
+                        <td>2704</td>
+                        <td>Бензин(нефтяной, малосернистый)</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0,014060</td>
+                        <td>0,00254</td>
+                        <td>0,11</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="red">
+                        <td>2732</td>
+                        <td>Керосин</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0,008759</td>
+                        <td>0,003763</td>
+                        <td>0,29</td>
+                        <td>0,03</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="red">
+                        <td>2754</td>
+                        <td>Углеводороды предельные С12-С19</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0,0017954</td>
+                        <td>0,01590</td>
+                        <td>1,8</td>
+                        <td>0,02</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="red">
+                        <td>2909</td>
+                        <td>Пыль неорганическая до 20% SiO2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0,009820</td>
+                        <td>0,00554</td>
+                        <td>1,96</td>
+                        <td>0,04</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="blue">
+                        <td>6204</td>
+                        <td>Серы диоксид, азота диоксид</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0,000000</td>
+                        <td>0,00000</td>
+                        <td>6,14</td>
+                        <td>0</td>
+                        <td>0,071</td>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="maxPollutionVersion1">
+                <h2>Контроль источников по создаваемым приземным концентрациям</h2>
+                <div class="icons">
+                    <button>
+                        <span class="icon iconBack"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconRemove"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconSolveManualUPR"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconSolveManual"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconPrint"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconLightning"></span>
+                    </button>
+                    <button>
+                        <span class="icon iconHelp"></span>
+                    </button>
+                </div>
+                <table class="tableMaxPollutionV1">
+                    <tr>
+                        <th colspan="3">Контрольная точка</th>
+                        <th colspan="3" >Номер</th>
+                        <th colspan="2">Контролируемое вещество</th>
+                    </tr>
+                    <tr>
+                        <th>номер</th>
+                        <th>координата X(м)</th>
+                        <th>координата Y(м)</th>
+                        <th>плщ.</th>
+                        <th>цех</th>
+                        <th>источ.</th>
+                        <th>код</th>
+                        <th>наименование</th>
+                    </tr>   
+                    <tr>
+                        <td>22</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>123</td>
+                        <td>диЖелезо триоксид (Железа оксид)</td>
+                    </tr>  
+                    <tr>
+                        <td>22</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>143</td>
+                        <td>Марганец и его соединения</td>
+                    </tr>     
+                    <tr>
+                        <td>22</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>164</td>
+                        <td>Никель оксид(в пересчете на никель)</td>
+                    </tr>        
+                    <tr>
+                        <td>22</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>184</td>
+                        <td>Свинец и его неорганические соединения</td>
+                    </tr>   
+                    <tr>
+                        <td>22</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>207</td>
+                        <td>Цинк оксид (в пересчете на цинк)</td>
+                    </tr>   
                 </table>
             </article>
         </main>

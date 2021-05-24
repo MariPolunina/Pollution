@@ -132,3 +132,40 @@ padding: 1%;
 {
     margin-top:1%;
 } 
+.categoryFactory
+{
+    display: flex;
+    flex-direction: column;
+}
+.categoryFactory label
+{
+margin-bottom: 5px;
+}
+.categoryFactory select
+{
+    margin-bottom: 10px;
+}
+.red
+{
+    color: red;
+}
+.blue 
+{
+    color: blue;
+}
+td:hover
+{
+    border: 2px dotted darkgray;
+}
+td:active
+{
+    background-color: lightblue;
+}
+button:hover
+{
+    border: 2px solid red;
+}
+button:active
+{
+    border: 2px solid blue;
+}
